@@ -96,7 +96,13 @@ a{color:#8CC63F;} a:hover{color:#B5E06E;}
         <b style="color:#8CC63F;">Comparativo contra la licencia:</b> el desarrollo completo cuesta menos que una renovación anual de Alteryx por usuario — y a diferencia de la licencia, la solución queda hecha a la medida de sus cuatro papeles de trabajo y no deja al equipo programando solo.
       </div>
       <div style="background:#13273F;border:1px solid #2A4A70;border-radius:12px;padding:22px 26px;font-size:14px;color:#D4E0EE;line-height:1.65;">
-        <b style="color:#fff;">Condiciones:</b> cifras en pesos mexicanos, más IVA. Desarrollo facturable 50% al arranque y 50% contra entrega del piloto validado. Mantenimiento a partir del mes siguiente a la entrega, cancelable con 30 días de aviso.
+        <b style="color:#fff;">Condiciones de pago:</b> cifras en pesos mexicanos, más IVA.
+        <div style="margin-top:12px;display:flex;flex-direction:column;gap:7px;">
+          <div style="display:flex;justify-content:space-between;gap:12px;"><span>Anticipo a la firma · 50%</span><span style="font-weight:600;color:#fff;">$12,500 + IVA</span></div>
+          <div style="display:flex;justify-content:space-between;gap:12px;"><span>Entrega de la primera fase · 25%</span><span style="font-weight:600;color:#fff;">$6,250 + IVA</span></div>
+          <div style="display:flex;justify-content:space-between;gap:12px;"><span>Cierre y aceptación · 25%</span><span style="font-weight:600;color:#fff;">$6,250 + IVA</span></div>
+        </div>
+        <div style="margin-top:14px;padding-top:12px;border-top:1px solid #24405F;">Mantenimiento mensual a cobrar a partir del primer mes de operación, cancelable con 30 días de aviso.</div>
       </div>
     </div>
   </sc-if>
@@ -225,14 +231,14 @@ class Component extends DCLogic {
     ];
     const inversion = [
       { num: 'INCLUIDO', label: 'Sin costo', title: 'Fase 1 · Diagnóstico y mapeo', price: 'Incluido',
-        note: 'Sesiones con el equipo operativo, inventario de fuentes reales, validación de este diagrama y definición del cliente piloto. No se cobra: es la base para cotizar con certeza.',
+        note: 'Sesiones con el equipo operativo, inventario de fuentes reales, validación de este diagrama y definición del cliente piloto.',
         items: ['Diagrama de proceso validado', 'Inventario de fuentes y formatos', 'Plan de trabajo con cliente piloto'] },
       { num: 'DESARROLLO', label: 'Precio de arranque', title: 'Fases 2 y 3 · Construcción de la solución', price: '$25,000', was: '$50,000',
         note: 'Precio especial de inicio por ser el primer proyecto conjunto. Incluye los cuatro papeles de trabajo, el cotejo asistido y el expediente documental automático.',
-        items: ['Ingesta de CFDIs, DIOT, cobranza y pedimentos', 'Motor de sumarización sobre sus plantillas Excel', 'Cotejo con semáforo de diferencias', 'Expediente ordenado y T.C. Banxico automático', 'Capacitación del equipo operativo'] },
+        items: ['Prioridad de desarrollo en el documento 4.1 (IVA acreditable)', 'Ingesta de CFDIs, DIOT, cobranza y pedimentos', 'Motor de sumarización sobre sus plantillas Excel', 'Cotejo con semáforo de diferencias', 'Expediente ordenado y T.C. Banxico automático', 'Capacitación del equipo operativo'] },
       { num: 'MANTENIMIENTO', label: 'Mensual', title: 'Fase 4 · Acompañamiento continuo', price: '$7,000',
         note: 'El equipo no se queda solo. Soporte, ajustes por cambios de formato o de reglas del SAT, y sesiones de dudas mientras usan la herramienta.',
-        items: ['Soporte y resolución de dudas', 'Ajustes por cambios del SAT o de formatos', 'Mejoras menores y nuevos clientes en la herramienta'] },
+        items: ['Soporte y resolución de dudas', 'Ajustes por cambios del SAT o de formatos', 'Mejoras menores y adaptación de nuevos clientes en la herramienta.'] },
     ];
     return { asis, tobe, fases, inversion };
   }
