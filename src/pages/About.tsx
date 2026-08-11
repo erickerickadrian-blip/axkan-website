@@ -25,7 +25,7 @@ export function About() {
             <div className="mx-auto md:mx-0">
               {photoOk ? (
                 <img
-                  src="/erick.jpg"
+                  src="/erick.png"
                   alt={t.about.founderName}
                   onError={() => setPhotoOk(false)}
                   className="size-44 rounded-2xl border border-border object-cover md:size-52"
